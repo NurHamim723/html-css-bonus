@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .wellcome-message{
+            border: 3px solid black;
+            height: 120px;
+            color:white;
+            background-color: rgb(184, 23, 23);
+            text-align: center;
+
+            
+        }
+
+        @media only screen and (max-width:620px;) {
+            .wellcome-message{
+                background-color: cornflowerblue;
+                height: 200px;
+            }
+            
+        }
+        @media only screen and (min-width:689px;) and (max-width:992px) {
+            .wellcome-message{
+                background-color:palevioletred;
+                text-align: right;
+            }
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="wellcome-message">
+            <h1>wellcome to our site</h1>
+        </div>
+    </header>
+</body>
+</html>
